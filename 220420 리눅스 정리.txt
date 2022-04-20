@@ -1,0 +1,39 @@
+groupadd
+groupdel
+groupmod
+
+gpasswd (그룹명)= 그룹의 패스워드 설정
+gpasswd -r (그룹명)  = 그룹의 패스워드 삭제
+gpasswd -a (사용자명) (그룹명)  = 사용자 그룹에 등록
+gpasswd -d (사용자명) (그룹명) = 그룹안의 사용자 삭제
+gpasswd -A 
+
+newgrp 그룹명 = 그룹에 로그인
+
+파일 시스템 개념
+파일 시스템이란 하드디스크,DVD,USB 등과 같은 저장매체에 데이터를 
+저장하거나 삭제 또는 검색하는 방법을 제어하기 위한 시스템
+
+저널링 기능은 파일 시스템에 변경사항을 반영하기 전에 저널 안에
+변경사항을 기록하고 추적하는 기능을 수행
+
+파일 시스템 구성
+
+리눅스 시스템은 한 개로 구성된 파일 시스템들이 모여 여러 파일 시스템으로 구성되어 있음
+
+fdisk -l
+lsblk -f
+
+fdisk /dev/sdb
+mkfs.ext4 /dev/sdb1
+mount /dev/sdb1 /mnt/usb
+umount /mnt/disk1cf 
+umount /mnt/usb
+
+
+
+
+mdadm --create /dev/md9 --level=1 --raid-devices=2 /dev/sdf1 /dev/sdg1
+mkdir /mnt/raidlinear -mnt 디렉토리에 raidlinear 디렉토리 생성
+df 
+mdadm _ 레이드 명령어 실행시엔 파티션 타입을 꼭 fd로 변경요망
