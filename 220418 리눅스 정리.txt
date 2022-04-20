@@ -1,0 +1,91 @@
+cal - 캘린더
+clear - 정리 기능
+
+users
+who
+w
+
+logname
+whoami
+id
+
+date
+timedatectl
+history
+man
+
+uname
+hostname - 가상컴퓨터 이름
+hostnamectl 
+arch
+
+env - 환경변수 확인
+echo - 출력 명령어
+-n 프롬프트를 이어서 출력
+which - 어느파일에 위치하는지 확인
+finger 유저 정보 확인
+whatis - 축약
+sleep - 잠시 멈추는거
+
+ls - 파일과 디렉토리 정보
+-l
+-d
+-x
+-R
+-t
+-r
+pwd - 현재 나의 디렉토리 정보
+cd - 체인지 디렉토리
+ㄴ 절대경로와 상대경로
+절대경로 : 최상위 경로로부터 타고들어가야함
+상대경로 : 내 위치를 기준 , 들어가고자하는 디렉토리 검색하면 찾아서 들어가짐
+
+mkdir - dir디렉토리 생성
+rmdir - dir디렉토리 제거 
+touch - 파일 생성
+
+rm -r
+
+cp
+file 파일의 type 반환
+cat
+head
+tail
+more
+less
+whereis
+
+rm
+wc 
+
+find /etc -name services find /etc -name services -ls find / -uid 1001 -print 
+find / -size +30000k find / -perm -4000 -print 
+sudo find /etc -name services -exec file {} \; -exec wc {} \;
+
+grep [option(생략가능)] [PATTERNS] [FILE....]
+
+-
+d
+l
+b
+c
+s
+p
+
+
+redirection
+
+A > File 
+A n> File
+A &> File 
+A >> File
+
+pipe | - 명령어끼리 이어 붙혀 한번에 쓸때 사용 (명령어1) | (명령어2)
+
+chmod (change mode) - 접근권한 설정
+umask로 기본적인 접근권한을 설정가능 (숫자 권한에서 -로 계산)
+ex ) 0111 면 r,w,x 디렉토리(777), 파일(666)
+
+슈퍼유저 전용
+chown (호스트명) - 소유권 변경
+chgrp (호스트명) - 그룹 권한 변경
