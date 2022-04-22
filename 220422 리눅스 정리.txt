@@ -1,0 +1,39 @@
+xinetd 슈퍼 데몬
+
+service 
+{
+	disable = no
+	flags = REUSE
+	socket_type = stream
+	wait = no
+	user = root
+	server = /usr/sbin/in.telnetd
+	log_on_failure += USERID
+}
+
+ssh
+banana접속
+java 설정
+python 설정
+텔넷 설정
+
+sudo apt install mysql-server
+sudo my sql
+
+팀 단위로 프로젝트할때 사용
+MySQL 띄워놓고 다 같이 사용할 수 있도록 해야함.
+
+Apache webserver
+
+sudo apt install apache2 - apache2라는 웹서버 설치.
+systemctl -p services - 실행확인.
+cd /var/www/
+ls
+cd html/
+ls
+sudo mv index.html index.html.org
+sudo vi index.html
+
+sudo install php 
+
+리눅스 6일치 수업 시험 진행.
